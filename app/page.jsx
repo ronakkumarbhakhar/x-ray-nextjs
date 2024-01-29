@@ -1,8 +1,8 @@
-'use client';
+"use client";
 import { useState,useEffect } from "react";
 import Link  from "next/link";
 
-function linkList() {
+function LinkList() {
     const [data,setData]=useState([])
     useEffect(()=>{
         async function fetchData(){
@@ -19,7 +19,7 @@ function linkList() {
     },[])
     return (  
         <section className="linkList">
-            <div style={{margin:'15px',display:'flex',gap:"10px"}}>
+            <div style={{margin:"15px",display:"flex",gap:"10px"}}>
                 <table border="1">
                     <thead>
                         <tr>
@@ -33,9 +33,9 @@ function linkList() {
                         </tr>
                     </thead>
                     <tbody>
-                        {data.map((key)=>{
+                        {data.map((key,index)=>{
                             return (
-                                <tr>
+                                <tr key={key.user_email_id+'xyz'+index}>
                                     <td>{key.user_name?key.user_name:"default user"}</td>
                                     <td>{key.user_email_id?key.user_email_id:"null"}</td>
                                     <td>{key.phone_number?key.phone_number:"null"}</td>
@@ -53,4 +53,4 @@ function linkList() {
     );
 }
 
-export default linkList;
+export default LinkList;

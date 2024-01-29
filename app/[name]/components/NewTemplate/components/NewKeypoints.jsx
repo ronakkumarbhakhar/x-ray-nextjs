@@ -1,6 +1,6 @@
 'use client';
 
-import {useRef,useLayoutEffect} from "react";
+import {createRef,useRef,useLayoutEffect} from "react";
 import "./NewKeypoints.css"
 function NewKeypoints(props) {
     const crossingData={}
@@ -24,7 +24,7 @@ function NewKeypoints(props) {
             Scope for Improvement
         </div>
         <ul className="content">
-            {props.scope_of_improvement.map((data,index)=>{ scopeOfImprovementRef.push(useRef(null)); return ( <li ref={scopeOfImprovementRef[index]} key={'improvement'+index}> {data}</li>)})}
+            {props.scope_of_improvement.map((data,index)=>{ scopeOfImprovementRef.push(createRef(null)); return ( <li ref={scopeOfImprovementRef[index]} key={'improvement'+index}> {data}</li>)})}
         </ul></>
     }
 
@@ -34,11 +34,11 @@ function NewKeypoints(props) {
                 Expert Suggestions
             </div>
             <ul className="content">
-            {props.expert_suggestions.uncategorised.map((key,index)=>{ expertSuggestionRef.uncategorised.push(useRef(null)); return ( <li ref={expertSuggestionRef.uncategorised[index]} key={'uncategorised-suggestions'+index}>{key.toString()}</li>)})}
+            {props.expert_suggestions.uncategorised.map((key,index)=>{ expertSuggestionRef.uncategorised.push(createRef(null)); return ( <li ref={expertSuggestionRef.uncategorised[index]} key={'uncategorised-suggestions'+index}>{key.toString()}</li>)})}
             </ul>
             <ul className="content">
             { Object.keys(props.expert_suggestions.categorised).map((key,i)=>{
-                    expertSuggestionRef.categorised.push(useRef(null))
+                    expertSuggestionRef.categorised.push(createRef(null))
                     return (
                         <li ref={expertSuggestionRef.categorised[i]} key={"subcategory"+i} className="expertSuggestions-subcategory">
                             <p className="expertSuggestions-subcategory-heading">
@@ -67,11 +67,11 @@ function NewKeypoints(props) {
             <div  className="content-heading">
             </div>
             <ul className="content">
-            {props.none_expert_suggestions.uncategorised.map((data,index)=>{ expertSuggestionRef.uncategorised.push(useRef(null)); return ( <li ref={expertSuggestionRef.uncategorised[index]} key={'uncategorised-suggestions'+index}> {data.toString()}</li>)})}
+            {props.none_expert_suggestions.uncategorised.map((data,index)=>{ expertSuggestionRef.uncategorised.push(createRef(null)); return ( <li ref={expertSuggestionRef.uncategorised[index]} key={'uncategorised-suggestions'+index}> {data.toString()}</li>)})}
             </ul>
             <ul className="content">
             { Object.keys(props.none_expert_suggestions.categorised).map((key,i)=>{
-                    expertSuggestionRef.categorised.push(useRef(null))
+                    expertSuggestionRef.categorised.push(createRef(null))
                     return (
                         <li ref={expertSuggestionRef.categorised[i]} key={"subcategory"+i} className="expertSuggestions-subcategory">
                             <p className="expertSuggestions-subcategory-heading">
@@ -212,7 +212,7 @@ function NewKeypoints(props) {
                     
                     </div>
                     <ul className="content">
-                    {props.current_analysis.map((data,index)=>{ currentAnalysisRef.push(useRef(null)); return ( <li ref={currentAnalysisRef[index]} key={'analysis'+index}> {data}</li>)})}
+                    {props.current_analysis.map((data,index)=>{ currentAnalysisRef.push(createRef(null)); return ( <li ref={currentAnalysisRef[index]} key={'analysis'+index}> {data}</li>)})}
                     </ul>
                 </>
             ):""}

@@ -128,7 +128,7 @@ function App(props) {
             </>
           )
         })}
-        <Last pageNo={templatePageNo.current++}>What &rsquo s Next</Last>
+        <Last pageNo={templatePageNo.current++}>What&rsquo;s Next</Last>
       </div>
       <div ref={loaderRef} className="loader-container">
         <div className="loader"></div>

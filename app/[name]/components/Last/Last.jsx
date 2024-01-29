@@ -25,7 +25,7 @@ export default function Last(props){
                             Connect with Spring Money
                         </div>
                         <div className="connect-content">
-                        Make informed financial decisions and work on stress-free financial future. Discover expert financial strategies personalised just for you and take control of your financial future with our holistic advisory solutions. Let's embark on a journey to make smarter financial decisions together.
+                        Make informed financial decisions and work on stress-free financial future. Discover expert financial strategies personalised just for you and take control of your financial future with our holistic advisory solutions. Let&apos;s embark on a journey to make smarter financial decisions together.
                         </div>
                     </div>
                     <div className="connect-btn">
@@ -67,7 +67,7 @@ export default function Last(props){
                         Disclaimer
                     </div>
                     <p className="disclaimer-content">
-                        This Financial X-Ray Report has been prepared by 2AN Technologies Private Limited ('Spring Money') based on the details provided by the user of this report. The findings of this report are meant to act as broad guidelines for attaining financial well-being. This assessment is not a recommendation or advice for making any financial or non-financial decision. Before making any financial decisions, the user must study and comprehend the applicable rules, regulations, and legal framework in addition to conducting his/her own independent analysis and due diligence. For more information, please visit our <a href="https://spring.money">website</a>.
+                        This Financial X-Ray Report has been prepared by 2AN Technologies Private Limited (&rsquo;Spring Money&rsquo;) based on the details provided by the user of this report. The findings of this report are meant to act as broad guidelines for attaining financial well-being. This assessment is not a recommendation or advice for making any financial or non-financial decision. Before making any financial decisions, the user must study and comprehend the applicable rules, regulations, and legal framework in addition to conducting his/her own independent analysis and due diligence. For more information, please visit our <a href="https://spring.money">website</a>.
                     </p>
                 </div>
                 <figure className="bg-img">
