@@ -30,11 +30,11 @@ function App(props) {
 
   let score={};
   let first={}
-  if('creation' in data){
+  if("creation" in data){
     first={"date":data.creation,"name":data.user_name}
   }
 
-  if('health_check_summary_table' in data){
+  if("health_check_summary_table" in data){
     data.health_check_summary_table.map((summary_data)=>{
       if(!(summary_data.category in category_object)){
         category_object[summary_data.category]=1;
@@ -69,7 +69,7 @@ function App(props) {
         for(let child of targetRef.current.children){
           const data = await html2canvas(child);
           const img = data.toDataURL({
-            format: 'jpeg',
+            format: "jpeg",
           });  
           const imgProperties = pdf.getImageProperties(img);
           const pdfWidth = pdf.internal.pageSize.getWidth();
@@ -77,8 +77,8 @@ function App(props) {
           if(i!=0){
             pdf.addPage()
           }
-          pdf.addImage(img, "PNG", 0, 0, pdfWidth, pdfHeight,"",'FAST');
-          const links = Array.from(child.querySelectorAll('a'));
+          pdf.addImage(img, "PNG", 0, 0, pdfWidth, pdfHeight,"","FAST");
+          const links = Array.from(child.querySelectorAll("a"));
 
           const A4Width = pdfWidth; // A4 width in pixels
           const A4Height = pdfHeight; // A4 height in pixels
@@ -95,7 +95,7 @@ function App(props) {
             const width = rect.width*scale_factor;
             const height = rect.height*scale_factor;
             console.log("child top,child left, x, y",child.getBoundingClientRect().top,child.getBoundingClientRect().left,rect.top,rect.left)
-            // pdf.rect(x,y, width,height, 'F');
+            // pdf.rect(x,y, width,height, "F");
             pdf.link(x,y, width,height, {url: link.href});      
           });
           i++;
@@ -115,8 +115,8 @@ function App(props) {
     }
     console.log("App")
   return (
-    <div className='App'>
-      <button className='DownloadBtn' ref={downloadBtnRef} onClick={toPDF}>Download</button>
+    <div className="App">
+      <button className="DownloadBtn" ref={downloadBtnRef} onClick={toPDF}>Download</button>
       <div ref={targetRef}>
         <First score={score} data={first}></First>
         {Object.keys(category_object).map((category,index)=>{
@@ -128,10 +128,10 @@ function App(props) {
             </>
           )
         })}
-        <Last pageNo={templatePageNo.current++}>What's Next</Last>
+        <Last pageNo={templatePageNo.current++}>What &rsquo s Next</Last>
       </div>
       <div ref={loaderRef} className="loader-container">
-        <div className='loader'></div>
+        <div className="loader"></div>
       </div>
     </div>
 
