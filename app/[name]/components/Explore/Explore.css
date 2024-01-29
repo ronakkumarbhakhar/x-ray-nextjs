@@ -1,0 +1,60 @@
+.Explore{
+    border-radius: 8px;
+    background: #F3F9F7;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.Explore-heading{
+    color: #0E5235;
+    font-family: var(--MAIN-FONT);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Explore-content{
+    color: #272B2A;
+    font-family: var(--MAIN-FONT);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Explore-content span{
+    color: #108E66;   
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 795px) {
+    .Explore-heading{
+        font-size: 14px;
+    }
+    .Explore-content{
+        font-size: 12px;
+    }
+ }
+ 
+ @media screen and (max-width: 600px) {
+    .Explore{
+        padding: 10px;
+    }
+    .Explore-heading{
+        font-size: 12px;
+    }
+    .Explore-content{
+        font-size: 10px;
+    }
+ }
+ 
+ @media screen and (max-width: 450px) {
+    .Explore-heading{
+        font-size: 10px;
+    }
+    .Explore-content{
+        font-size: 8px;
+    }
+ }

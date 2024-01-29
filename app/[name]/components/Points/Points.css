@@ -1,0 +1,26 @@
+.content-container{
+    padding: 10px;
+}
+
+.content-heading{
+    color: #0E5235;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.content{
+    color: #272B2A;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+
+.content li{
+    margin-bottom: 5px;
+    line-height: 22px;
+}

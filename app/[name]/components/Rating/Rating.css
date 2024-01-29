@@ -1,0 +1,157 @@
+.Rating{
+    border-radius: 8px;
+    border: 0.5px solid #108E66;
+    background: rgba(16, 142, 102, 0.01);
+    display: flex;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    align-self: stretch;
+    margin-bottom: 20px;
+    height: 240px;
+}
+
+.Rating-container{
+    display: flex;
+    align-items: end;
+    align-self: flex-end;
+    gap: 8px;
+}
+
+.Rating-logo img{
+    width: 60px;
+    height:auto;
+}
+
+.Rating-text{
+    color: #DBEEE8;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px; /* 125% */
+}
+
+.Rating-text-dark{
+    color: #108E66;
+}
+
+.Rating-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 4px;
+    flex-grow: 1;    
+}
+
+.Rating-content-heading{
+    color: #0E5235;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Rating-content{
+    color: #0E5235;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (max-width: 960px) {
+    .Rating{
+        height: 285px;
+    }
+    .Rating-logo img{
+        width: 60px;
+        height:auto;
+    }
+    .Rating-content-heading{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .Rating-content{
+        color: #0E5235;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+ }
+
+@media screen and (max-width: 795px) {
+    .Rating{
+        height: 170px;
+    }
+    .Rating-logo img{
+        width: 35px;
+        height:auto;
+    }
+    .Rating-content-heading{
+        font-size: 11px;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .Rating-content{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Rating {
+        gap: 10px;
+        padding: 5px;
+        height: 160px;
+    }
+    .Rating-logo img{
+        width: 25px;
+        height:auto;
+    }
+    .Rating-content-heading{
+        font-size: 10px;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .Rating-content{
+        font-size: 8px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Rating {
+        gap: 4px;
+        padding: 5px;
+        margin-bottom: 5px;
+        height:165px;
+    }
+    .Rating-logo img{
+        width: 18px;
+        height:auto;
+    }
+    .Rating-content-heading{
+        font-size: 7px;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .Rating-content{
+        font-size: 6px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
