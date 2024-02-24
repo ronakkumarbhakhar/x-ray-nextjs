@@ -29,8 +29,13 @@ import {
   function First(props){
     
     const options = {
-      maintainAspectRatio: false,
-      aspectRatio: 1
+      aspectRatio: 1,
+      scales: {
+        r: {
+          min: 0,
+          max: 100
+        }
+      }
     }
 
     let footer;

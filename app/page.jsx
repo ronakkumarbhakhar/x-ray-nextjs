@@ -6,13 +6,13 @@ function LinkList() {
     const [data,setData]=useState([])
     useEffect(()=>{
         async function fetchData(){
-            const baseURL="https://xray-backend.onrender.com/";
+            const baseURL="/api/get_list_of_all_forms";
             //   const baseURL="http://localhost:8080/";
             let response=await fetch(baseURL, {method:"GET"})
             response=await response.json();
 
             setData([...response.data]);
-            console.log(response) 
+            console.log('response',response) 
         }
         
         fetchData();

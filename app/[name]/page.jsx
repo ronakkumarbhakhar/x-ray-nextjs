@@ -15,6 +15,7 @@ function App(props) {
 
   const [data, setData] = useState({})   
   const {name } = useParams()
+  console.log("name",decodeURI(name))
   const mainStore=useSelector(state=>state.mainStore.data)
   const category_object={};
 
@@ -50,14 +51,20 @@ function App(props) {
 
   useEffect(()=>{
     async function fetchData(){
-      const baseURL=`https://xray-backend.onrender.com/api/${name}`;
-      let response=await fetch(baseURL, {method:"GET"})
+      try{const baseURL=`/api/get_details_of_health_check_form_result`;
+      let data={name:decodeURI(name)};
+      let response=await fetch(baseURL, {
+        method:"POST",
+        body:JSON.stringify(data)
+    })
       response=await response.json();
 
+      console.log(" main response",response)
       setData(response.data);
-      console.log(response.data)
+      }catch(error){
+      console.log(error)
     }
-
+  }
     fetchData();
     },[])
 
