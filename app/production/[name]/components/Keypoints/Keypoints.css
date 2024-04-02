@@ -1,0 +1,114 @@
+
+.Keypoints{
+    --INVERSE-RATIO:842 / 595;
+    --EXTRA-SPACE:420px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(14, 82, 53, 0.50);
+    background: #FFF;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: max-content;
+    max-height: calc((var(--MAX-WIDTH) * var(--INVERSE-RATIO)) - var(--EXTRA-SPACE));
+    overflow: hidden;
+}
+
+.content-container{
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.content-heading{
+    color: #0E5235;
+    font-family: var(--MAIN-FONT);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.content{
+    color: #272B2A;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+
+.content li{
+    margin-bottom: 5px;
+    line-height: 22px;
+    height:max-content;
+}
+
+.expertSuggestions-subcategory-heading{
+    font-weight: 600;
+}
+.expertSuggestions-subcategory ul p{
+    margin-bottom: 10px;
+    line-height: 22px;
+    height:max-content;
+}
+@media screen and (max-width: 960px) {
+    .Keypoints{
+        --INVERSE-RATIO:842 / 595;
+        --EXTRA-SPACE:690px;
+        max-height: calc((var(--MAX-WIDTH) * var(--INVERSE-RATIO)) - var(--EXTRA-SPACE));
+    }
+ }
+
+@media screen and (max-width: 795px) {
+    .content-heading {
+        font-size: 14px;
+        font-style: normal;
+    }
+    .content {
+        font-size: 12px;
+    }
+
+    .Keypoints{
+        --INVERSE-RATIO:842 / 595;
+        --EXTRA-SPACE:820px;
+        max-height: calc((var(--MAX-WIDTH) * var(--INVERSE-RATIO)) - var(--EXTRA-SPACE));
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-heading {
+        font-size: 12px;
+        font-style: normal;
+    }
+    .content {
+        font-size: 10px;
+    }
+
+    .content li{
+        margin-bottom: 0px;
+        line-height: 14px;
+        height:max-content;
+    }
+
+    .Keypoints{
+        --INVERSE-RATIO:842 / 595;
+        --EXTRA-SPACE:1020px;
+        max-height: calc((var(--MAX-WIDTH) * var(--INVERSE-RATIO)) - var(--EXTRA-SPACE));
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .content-heading {
+        font-size: 10px;
+        font-style: normal;
+    }
+    .content {
+        font-size: 8px;
+    }
+
+    .Keypoints{
+        --INVERSE-RATIO:842 / 595;
+        --EXTRA-SPACE:1100px;
+        max-height: calc((var(--MAX-WIDTH) * var(--INVERSE-RATIO)) - var(--EXTRA-SPACE));
+    }
+}

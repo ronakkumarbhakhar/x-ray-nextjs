@@ -1,0 +1,36 @@
+.Template{
+    position: relative;
+    padding: 20px;
+    padding-bottom: 0;
+    width: var(--WIDTH);
+    max-width: var(--MAX-WIDTH);
+    aspect-ratio: var(--ASPECT-RATIO);
+    height: var(--HEIGHT);
+    overflow-y: hidden;
+    background-color: #fff;
+    /* height: calc(100vh - 40px); */
+    /* margin-bottom: 40px; */
+    /* page-break-after: always; */
+    /* max-height: calc(100vh - 40px); */
+}
+
+.dist{
+    margin-bottom: 20px;
+}
+
+.dist:nth-last-child(){
+    margin-bottom: 0px;
+}
+
+@media print {
+    .Template {
+      page-break-after: always;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .Template{
+        padding: 10px;
+        padding-bottom: 0;
+    }
+}
