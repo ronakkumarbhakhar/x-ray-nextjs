@@ -11,7 +11,7 @@ function Header(props,ref){
         <section ref={ref} className="header">
             <div className="logo-container">
                 <div className="logo">
-                    <Image className="logoImg" src={logo} alt="logo" />
+                    <Image style={{height:"100%",width:"100%"}} src={logo} alt="logo" />
                     {/* <Image src={logoText} alt="Spring Money" /> */}
                 </div>
             </div>

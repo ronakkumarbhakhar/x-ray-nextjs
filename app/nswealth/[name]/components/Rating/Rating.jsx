@@ -50,6 +50,7 @@ function Rating(props){
         },
     }
 
+   console.log("ratings",props.category)
    let heading=oddLines[props.category].heading[score];
    let content=oddLines[props.category].content[score];
     return (
