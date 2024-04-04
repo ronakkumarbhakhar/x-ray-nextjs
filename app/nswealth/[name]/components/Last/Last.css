@@ -1,0 +1,282 @@
+.Last{
+    position: relative;
+    padding: 20px;
+    padding-bottom: 0;
+    width: var(--WIDTH);
+    max-width: var(--MAX-WIDTH);
+    aspect-ratio: var(--ASPECT-RATIO);
+    height: var(--HEIGHT);
+    background-color:#fff;
+    overflow: hidden;
+    /* height: calc(100vh - 40px); */
+}
+.Last-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(14, 82, 53, 0.50);
+    background: #FFF;
+    font-family: var(--MAIN-FONT);
+    font-style: normal;
+    line-height: normal;
+}
+
+.connect{
+    border-radius: 4px;
+    background: #F3F9F7;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.connect-heading{
+    color: #0E5235;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.connect-content{
+    color: #272B2A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.connect-btn{
+    border-radius: 4px;
+    background: #272B2A;
+    text-align: center;
+    color: #FFF;
+    max-width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect-btn p a{
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.second-para{
+    margin:0px 20px 0px 20px;
+    color: #272B2A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social-media{
+    margin: 20px;
+}
+
+.social-media p{
+    color: #272B2A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social-media-links{
+    display: flex;
+    gap: 10px;    
+}
+
+.bg-img{
+    position: absolute;
+    bottom: 45px;
+    left: -20px;
+}
+
+.chatBtn{
+    display: block;
+    height:40px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.chatBtn svg{
+    margin: 0;
+    padding: 0;
+}
+.disclaimer{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height:min-content;
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    font-family: Poppins;
+    margin-top: 14px;
+    margin: 30px 0px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #FBFBFB;
+}
+
+.disclaimer-heading{
+    color: #272B2A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.disclaimer-content{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+/* @media print {
+    .Last {
+      page-break-after: always;
+      page-break-before: always;
+    }
+  } */
+
+  @media screen and (max-width:906px) {
+    .disclaimer-heading{
+        font-size: 14px;
+    }
+    .disclaimer-content{
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 795px) {
+    .connect-heading {
+        font-size: 14px;
+    }
+    .connect-content {
+        font-size: 11px;
+    }
+    .connect-btn {
+        max-width: 300px;
+        height: 30px;
+    }
+    .connect-btn p {
+        font-size: 13px;
+    }
+
+    .second-para {
+        font-size: 11px;
+    }
+    .chatBtn{
+        height:30px;
+        width: 150px;
+    }
+    .disclaimer{
+        margin: 10px 0px;
+        padding: 5px;
+    }
+    .disclaimer-heading{
+        font-size: 12px;
+    }
+    .disclaimer-content{
+        font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Last-content{
+        gap:0px
+    }
+    .connect{
+        padding: 10px;
+        margin: 10px;
+        gap:10px;
+    }
+    .connect-heading {
+        font-size: 14px;
+    }
+    .connect-content {
+        font-size: 10px;
+    }
+    .connect-btn {
+        max-width: 300px;
+        height: 25px;
+    }
+    .connect-btn p {
+        font-size: 10px;
+    }
+
+    .second-para {
+        font-size: 10px;
+    }
+
+    .social-media{
+        margin: 10px;
+    }
+    .disclaimer{
+        bottom: 20px;
+    }
+    .disclaimer-heading{
+        font-size: 12px;
+    }
+    .disclaimer-content{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .connect{
+        padding: 8px;
+        margin: 8px;
+        gap:8px;
+    }
+    .connect-heading {
+        font-size: 12px;
+    }
+    .connect-content {
+        font-size: 8px;
+    }
+    .connect-btn {
+        max-width: 300px;
+        height: 15px;
+    }
+    .connect-btn p {
+        font-size: 8px;
+    }
+
+    .second-para {
+        font-size: 8px;
+    }
+    .social-media{
+        margin: 5px;
+    }
+    .social-media p {
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .social-media-links {
+        gap: 8px;
+    }
+    .social-media-links a img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .chatBtn{
+        height:25px;
+        width: 120px;
+    }
+
+    .disclaimer{
+        bottom: 15px;
+    }
+    .disclaimer-heading{
+        font-size: 9px;
+    }
+    .disclaimer-content{
+        font-size: 7px;
+    }
+
+}

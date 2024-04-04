@@ -1,0 +1,31 @@
+.Footer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    height: 30px;
+}
+
+.Footer-content, .Footer-number{
+    color: #272B2A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 450px) {
+    .Footer-content, .Footer-number{
+        font-size: 12px;
+    }
+}
